@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.practice.StatesTests" tests="9" skipped="0" failures="5" errors="0" timestamp="2024-07-29T13:10:04" hostname="DESKTOP-FIV6KMF" time="1.057">
+  <properties/>
+  <testcase name="getWant_To_VisitListTest()" classname="com.example.practice.StatesTests" time="0.725"/>
+  <testcase name="updateStateTest()" classname="com.example.practice.StatesTests" time="0.08"/>
+  <testcase name="getWeatherListTest()" classname="com.example.practice.StatesTests" time="0.05">
+    <failure message="java.lang.AssertionError: JSON path &quot;$&quot;&#13;&#10;Expected: iterable with items [&quot;hot&quot;, &quot;cold&quot;, &quot;mild&quot;, &quot;ice-cold&quot;, &quot;breezy&quot;] in any order&#13;&#10;     but: not matched: &quot;chilly&quot;" type="java.lang.AssertionError">java.lang.AssertionError: JSON path &quot;$&quot;
+Expected: iterable with items [&quot;hot&quot;, &quot;cold&quot;, &quot;mild&quot;, &quot;ice-cold&quot;, &quot;breezy&quot;] in any order
+     but: not matched: &quot;chilly&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:74)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.practice.StatesTests.getWeatherListTest(StatesTests.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="removeStateTest()" classname="com.example.practice.StatesTests" time="0.012"/>
+  <testcase name="getListOfAllStatesTests()" classname="com.example.practice.StatesTests" time="0.02">
+    <failure message="java.lang.AssertionError: JSON path &quot;$&quot;&#13;&#10;Expected: a collection with size &lt;5&gt;&#13;&#10;     but: collection size was &lt;4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: JSON path &quot;$&quot;
+Expected: a collection with size &lt;5&gt;
+     but: collection size was &lt;4&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:74)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.practice.StatesTests.getListOfAllStatesTests(StatesTests.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="updateStateWantToVisitTest()" classname="com.example.practice.StatesTests" time="0.064"/>
+  <testcase name="getTime_ZoneListTest()" classname="com.example.practice.StatesTests" time="0.021">
+    <failure message="java.lang.AssertionError: JSON path &quot;$&quot;&#13;&#10;Expected: iterable with items [&quot;north&quot;, &quot;south&quot;, &quot;eastern&quot;, &quot;western&quot;, &quot;mid-west&quot;] in any order&#13;&#10;     but: no item matches: &quot;western&quot; in [&quot;eastern&quot;, &quot;south&quot;, &quot;mid-west&quot;, &quot;north&quot;]" type="java.lang.AssertionError">java.lang.AssertionError: JSON path &quot;$&quot;
+Expected: iterable with items [&quot;north&quot;, &quot;south&quot;, &quot;eastern&quot;, &quot;western&quot;, &quot;mid-west&quot;] in any order
+     but: no item matches: &quot;western&quot; in [&quot;eastern&quot;, &quot;south&quot;, &quot;mid-west&quot;, &quot;north&quot;]
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:74)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.practice.StatesTests.getTime_ZoneListTest(StatesTests.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="getVisitedListTest()" classname="com.example.practice.StatesTests" time="0.02">
+    <failure message="java.lang.AssertionError: JSON path &quot;$&quot;&#13;&#10;Expected: iterable with items [&lt;false&gt;, &lt;true&gt;, &lt;true&gt;, &lt;false&gt;, &lt;false&gt;] in any order&#13;&#10;     but: no item matches: &lt;true&gt; in [&lt;false&gt;, &lt;true&gt;, &lt;false&gt;, &lt;false&gt;]" type="java.lang.AssertionError">java.lang.AssertionError: JSON path &quot;$&quot;
+Expected: iterable with items [&lt;false&gt;, &lt;true&gt;, &lt;true&gt;, &lt;false&gt;, &lt;false&gt;] in any order
+     but: no item matches: &lt;true&gt; in [&lt;false&gt;, &lt;true&gt;, &lt;false&gt;, &lt;false&gt;]
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:74)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.practice.StatesTests.getVisitedListTest(StatesTests.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="addStateTest()" classname="com.example.practice.StatesTests" time="0.037">
+    <failure message="java.lang.AssertionError: JSON path &quot;$.id&quot; expected:&lt;6&gt; but was:&lt;5&gt;" type="java.lang.AssertionError">java.lang.AssertionError: JSON path &quot;$.id&quot; expected:&lt;6&gt; but was:&lt;5&gt;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:123)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:111)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.practice.StatesTests.addStateTest(StatesTests.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <system-out><![CDATA[09:10:03.261 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.practice.StatesTests]: StatesTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:10:03.395 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.practice.PracticeApplication for test class com.example.practice.StatesTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-07-29T09:10:03.733-04:00  INFO 3500 --- [practice] [    Test worker] com.example.practice.StatesTests         : Starting StatesTests using Java 17.0.11 with PID 3500 (started by ingai in C:\Users\ingai\IdeaProjects\practice)
+2024-07-29T09:10:03.735-04:00  INFO 3500 --- [practice] [    Test worker] com.example.practice.StatesTests         : No active profile set, falling back to 1 default profile: "default"
+2024-07-29T09:10:04.501-04:00  INFO 3500 --- [practice] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-07-29T09:10:04.502-04:00  INFO 3500 --- [practice] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-07-29T09:10:04.504-04:00  INFO 3500 --- [practice] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-07-29T09:10:04.530-04:00  INFO 3500 --- [practice] [    Test worker] com.example.practice.StatesTests         : Started StatesTests in 1.065 seconds (process running for 2.017)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/states/want_to_visit
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#getWant_to_visit()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [true,false,true,false,true]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/states/1
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"6"]
+             Body = chilly
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#updateStateWeather(int, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":1,"weather":"chilly","time_zone":"eastern","visited":false,"want_to_visit":true}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/states/weather
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#getWeather()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = ["chilly","cold","mild","ice-cold","breezy"]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/states/weather
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#getWeather()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = ["chilly","cold","mild","ice-cold","breezy"]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/states/2
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#deleteState(int)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/states
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#getStates()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"weather":"chilly","time_zone":"eastern","visited":false,"want_to_visit":true},{"id":3,"weather":"mild","time_zone":"south","visited":true,"want_to_visit":true},{"id":4,"weather":"ice-cold","time_zone":"mid-west","visited":false,"want_to_visit":false},{"id":5,"weather":"breezy","time_zone":"north","visited":false,"want_to_visit":true}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/states
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#getStates()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"weather":"chilly","time_zone":"eastern","visited":false,"want_to_visit":true},{"id":3,"weather":"mild","time_zone":"south","visited":true,"want_to_visit":true},{"id":4,"weather":"ice-cold","time_zone":"mid-west","visited":false,"want_to_visit":false},{"id":5,"weather":"breezy","time_zone":"north","visited":false,"want_to_visit":true}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /api/states/1
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"5"]
+             Body = false
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#updateStateWantToVisit(int, Boolean)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":1,"weather":"chilly","time_zone":"eastern","visited":false,"want_to_visit":false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/states/time_zones
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#getTime_Zones()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = ["eastern","south","mid-west","north"]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/states/time_zones
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#getTime_Zones()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = ["eastern","south","mid-west","north"]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/states/visited
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#getVisited()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [false,true,false,false]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/states/visited
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#getVisited()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [false,true,false,false]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/states
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"75"]
+             Body = {"weather":"chilly","timeZone":"central","visited":true,"wantToVisit":true}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#postStates(State)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":5,"weather":"chilly","time_zone":null,"visited":true,"want_to_visit":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/states
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"75"]
+             Body = {"weather":"chilly","timeZone":"central","visited":true,"wantToVisit":true}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.practice.GoingController
+           Method = com.example.practice.GoingController#postStates(State)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":5,"weather":"chilly","time_zone":null,"visited":true,"want_to_visit":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
